@@ -1,0 +1,16 @@
+{
+    "name": "Funretro copy to clipboard",
+    "version": "0.1",
+    "description": "Download funretro cards as text!",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Funretro Copy to clipboard",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.funretro.io/*"],
+            "js": ["jquery.min.js", "content.js"]
+        }
+    ]
+}
